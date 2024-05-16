@@ -1,9 +1,6 @@
 # Talkify
 
-"Talkify" is a cutting-edge video chat web application designed to meet the evolving 
-communication needs of businesses, educational institutions, and individuals. Built using 
-advanced technologies such as HTML, CSS, JavaScript, Agora SDK, WebRTC, and Firebase 
-Authentication, Talkify offers a powerful platform for real-time communication. 
+"Talkify" is video chat web application. Built using advanced technologies such as HTML, CSS, JavaScript, Agora SDK, WebRTC, and Firebase Authentication, Talkify offers a powerful platform for real-time communication. 
 
 ## Technologies Used
 1.   Agora SDK and WebRTC Integration

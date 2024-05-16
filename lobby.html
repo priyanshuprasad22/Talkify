@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Chat</title>
+    <style>
+        body {
+            background-color: #151414; 
+            background-image: linear-gradient(135deg, #e7eeee 0%, #2ad9f8 100%);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0; 
+            padding: 0; 
+            font-family: Arial, sans-serif; 
+        }
+
+        /* Styling for logo */
+        .nav-list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80px; 
+            background-color: #f4f4f4; 
+            border-bottom: 1px solid #ccc; 
+        }
+
+        #logo {
+            display: flex;
+            align-items: center;
+            color: #007bff; 
+            font-size: 24px; 
+        }
+
+        #logo img {
+            margin-right: 10px;
+            height: 32px; 
+            width: auto; 
+        }
+
+        #container {
+            display: flex;
+            flex-direction: row;
+            height: calc(100vh - 80px); 
+        }
+
+        
+        #room-list {
+            width: 250px; 
+            height: fit-content;
+            background-color: #f4f4f4; 
+            overflow-y: auto; 
+        }
+
+        .message-block {
+            width: 100%; 
+            padding: 10px;
+            box-sizing: border-box; 
+            display: flex;
+            flex-direction: column; 
+            margin-bottom: 10px; 
+        }
+
+
+       
+        #chat-container {
+            flex:1; 
+            padding: 10px;
+        }
+
+        #chat-messages {
+            height: calc(100% - 20px);
+            overflow-y: auto; 
+            background: white;
+            padding: 10px;
+        }
+
+        
+        .room-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        #create-room-btn {
+            width: 150px;
+            height: 50px; 
+            font-size: 16px; 
+            background-color: #007bff; 
+            color: #fff;
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer;
+        }
+
+        #create-room-btn:hover {
+            background-color: #0056b3; 
+        }
+
+        .room {
+            padding: 10px;
+            cursor: pointer;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .room:hover {
+            background: #eaeaea;
+        }
+
+        .timestamp {
+            align-self: flex-end;
+            margin-left: auto;
+        }   
+    </style>
+</head>
+<body>
+
+    <div class="nav-list">
+        <h2 id="logo">
+            <img src="./images/video-camera.png" alt="Site Logo">
+            Talkify
+        </h2>
+    </div>
+
+    <div id="container">
+
+        <div id="room-list">
+            <div class="room" onclick="loadRoom('room1')"></div>
+        </div>
+        <div id="chat-container">
+            <div id="chat-messages">No Preview</div>
+        </div>
+    </div>
+    <div class="room-button">
+        <button id="create-room-btn">Create Room</button>
+    </div>
+
+    <script type="module" src="lobby.js"></script>
+    <script type="module" src="config/firebaseconfig.js"></script>
+</body>
+</html>

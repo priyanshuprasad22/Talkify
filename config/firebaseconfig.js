@@ -3,13 +3,13 @@ import { getAuth, signInWithEmailAndPassword,onAuthStateChanged,createUserWithEm
 import { getDatabase ,ref , set ,push , get , child, onValue } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-database.js";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCHQDmHp5Wv097tQqAzC_nPonqoPFBbUjM",
-    authDomain: "user-b6f2f.firebaseapp.com",
-    projectId: "user-b6f2f",
-    storageBucket: "user-b6f2f.appspot.com",
-    messagingSenderId: "177137279576",
-    appId: "1:177137279576:web:7ca7f7e23ec53b21f1202d",
-    measurementId: "G-52GS9GP01B"
+    apiKey: "",
+    authDomain: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: "",
+    appId: "",
+    measurementId: ""
 }
 
 const app=initializeApp(firebaseConfig);
